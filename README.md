@@ -10,4 +10,11 @@ Pruvo reads the diff and the changed files, writes the manual test cases that
 change actually needs (new behavior + its regression surface), tracks them in
 the dashboard, and comments the plan on the PR.
 
-See the open pull request for a live example.
+Two open pull requests show the range:
+
+- **[#1 — Gift cards at checkout](https://github.com/pruvohq/pruvo-demo/pull/1)** — a backend change
+  (`src/giftcard.ts` + checkout math): Pruvo generates cases for redemption
+  rules, caps, and the regression surface around totals.
+- **[#2 — Free-shipping progress nudge](https://github.com/pruvohq/pruvo-demo/pull/2)** — a frontend change
+  (`web/FreeShippingNudge.tsx` + cart UI): Pruvo generates manual UI cases —
+  visual states, threshold boundaries, coupon interaction, accessibility.
