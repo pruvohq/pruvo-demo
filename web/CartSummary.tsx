@@ -3,6 +3,7 @@ import { updateQuantity, type Cart } from '../src/cart';
 import { checkout } from '../src/checkout';
 import { type Coupon } from '../src/coupon';
 import { CouponField } from './CouponField';
+import { FreeShippingNudge } from './FreeShippingNudge';
 import { formatUsd } from './format';
 
 /**
@@ -47,6 +48,8 @@ export function CartSummary({ initialCart }: { initialCart: Cart }) {
           </li>
         ))}
       </ul>
+
+      <FreeShippingNudge payableGoodsCents={summary.subtotalCents - summary.discountCents} />
 
       <CouponField subtotalCents={summary.subtotalCents} onApply={setCoupon} />
 
