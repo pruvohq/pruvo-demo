@@ -15,6 +15,6 @@ Two open pull requests show the range:
 - **[#3 — Gift cards at checkout](https://github.com/pruvohq/pruvo-demo/pull/3)** — a backend change
   (`src/giftcard.ts` + checkout math): pruvo generates cases for redemption
   rules, caps, and the regression surface around totals.
-- **[#2 — Free-shipping progress nudge](https://github.com/pruvohq/pruvo-demo/pull/2)** — a frontend change
+- **[#4 — Free-shipping progress nudge](https://github.com/pruvohq/pruvo-demo/pull/4)** — a frontend change
   (`web/FreeShippingNudge.tsx` + cart UI): pruvo generates manual UI cases —
   visual states, threshold boundaries, coupon interaction, accessibility.
